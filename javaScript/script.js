@@ -8,6 +8,21 @@ function hora() {
     horario = new Date().toLocaleTimeString();
 }
 
+
+//mensagem que entrou 
+function Entrou() {
+    //salva todas mensagens presentes no site
+    listaMensagens = document.querySelector("ul");
+    // chama a função para verificar a hora.
+    hora();
+    //adiciona a mensagem de entrou
+    listaMensagens.innerHTML = listaMensagens.innerHTML +
+        ` <li class="entrousaiu">
+        <h1><time> (${horario})</time> <strong>${nome}</strong> entra na sala...</h1>
+    </li>`;
+}
+Entrou();
+
 //funcão para enviar a mensagem
 function enviarMensagem() {
     //salva o valor digitado
@@ -23,5 +38,4 @@ function enviarMensagem() {
     </li>`;
     //remove a mensagem do input para uma nova ser digitada
     document.querySelector('.mensagem').value = '';
-
 }
