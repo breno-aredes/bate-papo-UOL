@@ -33,7 +33,7 @@
         width: 375px;
     }
 
-    div {
+    li {
         border-radius: 2px;
         padding-left: 8px;
         margin-bottom: 4px;
@@ -102,5 +102,6 @@
         font-size: 26px;
         right: 18px;
         bottom: 27px;
+        cursor: pointer;
     }
 }
